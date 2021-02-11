@@ -1,0 +1,43 @@
+$main-color: #F7654A;
+
+html {
+    font-family: 'Oswald', sans-serif;
+    font-weight: 500;
+    color: #000000;
+}
+
+.title {
+    font-size: 36px;
+    font-weight: 500;
+    color: #000000;
+    margin-bottom: 60px;
+    text-align: center;
+
+    @media screen and (max-width: 1300px) {
+        font-size: 30px;
+    }
+
+    @media screen and (max-width: 900px) {
+        font-size: 24px;
+    }
+
+    @media screen and (max-width: 600px) {
+        font-size: 20px;
+    }
+}
+
+.button {
+    letter-spacing: 0.05em;
+    font-size: 14px;
+    padding: 14px 30px 14px 63px;
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        background: url(../img/mail-icon.png);
+        width: 18px;
+        height: 15px;
+        left: 30px;
+    }
+}
